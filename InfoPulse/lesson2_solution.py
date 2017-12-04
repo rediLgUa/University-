@@ -6,3 +6,4 @@ if task1string.isdecimal():
 else:
     print("Вы ввели строчное значение")
 print("кол-во пробелов = "+ str(task1string.count(" ")))
+print("кол-во символов '.' = "+ str(task1string.count(".")))
