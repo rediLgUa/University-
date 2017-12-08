@@ -1,5 +1,5 @@
 a,b,c = int(input("Введите первое число: ")),int(input("Введите второе число: ")),int(input("Введите третье чило: "))
-if a>=b and a>=c:
+if a>=b>=c:
     if b>=c:
         print(str(c) + " " + str(b) + " " + str(a))
     else:

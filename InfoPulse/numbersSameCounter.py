@@ -1,6 +1,6 @@
 a,b,c = int(input("Введите первое число: ")),int(input("Введите второе число: ")),int(input("Введите третье чило: "))
 count=0
-if a==b and a==c:
+if a==b==c:
     print("3")
 elif b==c and b!=a:
     print("2")
