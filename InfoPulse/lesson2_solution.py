@@ -14,7 +14,7 @@ print("кол-во символов '.' = ",task1string.count(".")) #fixed - wit
 # Создайте строку "Homework". Преобразуйте ее в строку длиной 100 символов,
 # посередине которой исходное слово, а с обоих сторон строка заполнена пробелами. Выведите ее на экран.
 task4 = "Homework"
-print(task4.center(100)) #Fixed
+print(task4.center(100)) #Fix with spaces. Without hardcode.
 
 # Сделайте первые буквы слов строки большими (upper case).
 print(task4.upper())
