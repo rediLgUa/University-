@@ -2,7 +2,7 @@ import math
 import random
 
 # вычисление гипотенузы
-print("gypo = ",math.sqrt((179**2)+(971**2))) #fixed - without Type reworking.
+print("gypo =",math.sqrt((179**2)+(971**2))) #fixed - without Type reworking.
 
 # вычисление количества десятков в числе
 i = random.randint(10,99)

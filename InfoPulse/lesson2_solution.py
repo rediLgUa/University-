@@ -9,6 +9,8 @@ print("кол-во пробелов = ",task1string.count(" ")) #fixed - without
 print("кол-во символов '.' = ",task1string.count(".")) #fixed - without Type reworking.
 
 task4 = "Homework"
-print(" "*46 + task4 + " "*46)
+print('{:>46} {:>46}'.format(task4,""))
+a=('{:>50} {:>49}'.format(task4,""))
+print(a.count(" "))
 print(task4.upper())
 
