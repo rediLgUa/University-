@@ -1,21 +1,19 @@
 a,b,c = int(input("Введите первое число: ")),int(input("Введите второе число: ")),int(input("Введите третье чило: "))
 if a>=b>=c:
     if b>=c:
-        print(str(c) + " " + str(b) + " " + str(a))
+        a,c=c,a
     else:
-        print(str(b) + " " + str(c) + " " + str(a))
+        a,b,c=b,c,a
 elif b>=a and b>=c:
     if a>=c:
-        print(str(c) + " " + str(a) + " " + str(b))
+        a,b,c=c,a,b
     else:
-        print(str(a) + " " + str(c) + " " + str(b))
+        b,c=c,b
 elif c>=a and c>=b:
     if a>=b:
-        print(str(b) + " " + str(a) + " " + str(c))
-    else:
-        print(str(a) + " " + str(b) + " " + str(c))
-
-
+        a,b=b,a
+else: a,b,c=b,c,a
+print(str(a) + " " + str(b) + " " + str(c))
 
 
 
