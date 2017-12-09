@@ -5,8 +5,8 @@ if task1string.isdecimal():
 else:
     print("Вы ввели строчное значение")
 
-print("кол-во пробелов = "+ str(task1string.count(" ")))
-print("кол-во символов '.' = "+ str(task1string.count(".")))
+print("кол-во пробелов = ",task1string.count(" ")) #fixed - without Type reworking.
+print("кол-во символов '.' = ",task1string.count(".")) #fixed - without Type reworking.
 
 task4 = "Homework"
 print(" "*46 + task4 + " "*46)

@@ -13,7 +13,7 @@ elif c>=a and c>=b:
     if a>=b:
         a,b=b,a
 else: a,b,c=b,c,a
-print(str(a) + " " + str(b) + " " + str(c))
+print(a," ",b," ",c) #fixed - without Type reworking.
 
 
 

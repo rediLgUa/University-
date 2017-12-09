@@ -2,29 +2,29 @@ import math
 import random
 
 # вычисление гипотенузы
-print("gypo = " +str(int(math.sqrt((179**2)+(971**2)))))
+print("gypo = ",math.sqrt((179**2)+(971**2))) #fixed - without Type reworking.
 
 # вычисление количества десятков в числе
 i = random.randint(10,99)
-print("двузначное число = " +str(i))
-i = list(str(i))
-if int(i[0]) < 2:
-    print("в числе "+i[0]+" десяток")
-elif 2 < int(i[0])<5:
-    print("в числе "+i[0]+" десятка")
+print("двузначное число = ", i) #fixed - without Type reworking.
+
+i=i//10 #Fixed - only with numbers
+if i <= 2:
+    print("в числе ",i," десяток")
+elif 2 <=i//10<=5:
+    print("в числе ",i," десятка")
 else:
-    print("в числе "+i[0]+" десятков")
+    print("в числе ",i," десятков")
 
 # вычисление суммы трех чисел
-i = random.randint(100,999)
-print("трехзначное число = " +str(i))
-i = list(str(i))
-summa = str(int(i[0])+int(i[1])+int(i[2]))
-print("Сумма цифр трехзначного числа = " + summa)
+i = str(random.randint(100,999))
+print("трехзначное число = ",i) #fixed - without Type reworking.
+summa = int(i[0])+int(i[1])+int(i[2])
+print("Сумма цифр трехзначного числа = ",summa)
 
 #дано случайное целое число - вывести следующее четное после него
 i = random.randint(-999,999)
-print("случайное целое число = " + str(i))
+print("случайное целое число = ",i)
 print(int(i//2*2+2)) #fixed
 
 #дано положительное действительное число X. Выведите дробную часть
