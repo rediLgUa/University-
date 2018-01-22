@@ -18,7 +18,7 @@ newListwithWords=[]
 for i in currentVal.split(" "):
     wordsCount += 1
     newListwithWords.append(i)
-print(wordsCount) # вывод количества слов в тексте.
+print(wordsCount, " Колличество строк в массиве") # вывод количества слов в тексте.
 
 for i in range (len(newListwithWords)):
     newListwithWords[i]=newListwithWords[i].strip(",") # Удаление знаков препинания

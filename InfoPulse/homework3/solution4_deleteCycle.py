@@ -9,22 +9,22 @@
 numList = [int(x) for x in input("Enter first List for TASK 1 with Spaces : ").split()]
 stringInput = input("Enter string for TASK 2: ")
 numList2 = [int(x) for x in input("Enter first List for TASK 3 with Spaces: ").split()]
-try:
-    def listItemDeleting (mass):
+def listItemDeleting (mass):
+    try:
         for i in range(len(mass)):
             print(mass)
             del mass[0]
         return
-except:
-    print("Something wrong. Check code.")
+    except:
+        print("Something wrong. Check code.")
 
 def wordLettersDeleting(sent):
     for i in range(len(sent)):
         print(sent)
         sent=sent[:-1]
 #Функция не изменяет исходную переменну, создается илюзия удаления для задания.
-try:
-    def delMaxtillMin(mass):
+def delMaxtillMin(mass):
+    try:
         n = 1
         while n < len(mass):
             for i in range(len(mass) - n):
@@ -36,8 +36,8 @@ try:
             print(mass[0],end=" deleted\n")
             mass.pop(0)
             i+=1
-except:
-    print("Something wrong. Check code.")
+    except:
+        print("Something wrong. Check code.")
 
 listItemDeleting(numList)
 wordLettersDeleting(stringInput)

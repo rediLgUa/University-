@@ -11,18 +11,20 @@
 В девятой строке выведите длину данной строки.
 '''
 
-
-enteredVal = input("Введите предложение не короче, чем 3 символа: ")
-try:
-    print(enteredVal[2],
-          enteredVal[-2],
-          enteredVal[0:5],
-          enteredVal[0:-2],
-          enteredVal[0::2],
-          enteredVal[1::2],
-          enteredVal[::-1],
-          enteredVal[::-2],
-          len(enteredVal),
-          sep="\n")
-except:
-    print("Введённая строка слишком короткая")
+def priEntered ():
+    try:
+        enteredVal = input("Введите предложение не короче, чем 3 символа: ")
+        print(enteredVal[2],
+        enteredVal[-2],
+        enteredVal[:5],
+        enteredVal[:-2],
+        enteredVal[::2],
+        enteredVal[1::2],
+        enteredVal[::-1],
+        enteredVal[::-2],
+        len(enteredVal),
+        sep="\n")
+    except IndexError as e:
+          print(e)
+if __name__ == "__main__":
+      priEntered()
