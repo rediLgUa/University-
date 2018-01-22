@@ -1,0 +1,3 @@
+0 This is a file with text. Called test.txt
+1 second
+2 third
